@@ -1,6 +1,6 @@
 # Fifthgear
 
-TODO: Write a gem description
+Ruby gem for interfacing with [Fifthgear's](https://github.com/fifthgear/fifthgear-raw) api
 
 ## Installation
 
@@ -22,7 +22,7 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/fifthgear/fork )
+1. Fork it ( https://github.com/WalkerAndCoBrandsInc/fifthgear/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
