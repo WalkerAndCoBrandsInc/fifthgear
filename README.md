@@ -1,4 +1,5 @@
 # Fifthgear
+[![Build Status](https://travis-ci.org/WalkerAndCoBrandsInc/fifthgear.svg?branch=develop)](https://travis-ci.org/WalkerAndCoBrandsInc/fifthgear)
 
 Ruby gem for interfacing with [Fifthgear's](https://github.com/fifthgear/fifthgear-raw) api
 
