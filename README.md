@@ -1,5 +1,5 @@
 # Fifthgear
-[![Build Status](https://travis-ci.org/WalkerAndCoBrandsInc/fifthgear.svg?branch=develop)](https://travis-ci.org/WalkerAndCoBrandsInc/fifthgear)
+[![Build Status](https://travis-ci.org/WalkerAndCoBrandsInc/fifthgear.svg?branch=develop)](https://travis-ci.org/WalkerAndCoBrandsInc/fifthgear) [![Code Climate](https://codeclimate.com/github/WalkerAndCoBrandsInc/fifthgear/badges/gpa.svg)](https://codeclimate.com/github/WalkerAndCoBrandsInc/fifthgear) [![Test Coverage](https://codeclimate.com/github/WalkerAndCoBrandsInc/fifthgear/badges/coverage.svg)](https://codeclimate.com/github/WalkerAndCoBrandsInc/fifthgear)
 
 Ruby gem for interfacing with [Fifthgear's](https://github.com/fifthgear/fifthgear-raw) api
 
