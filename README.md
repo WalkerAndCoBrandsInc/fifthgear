@@ -27,6 +27,7 @@ Fifthgear.configure do |config|
   config.password = 'bar'
   config.company_id = 'big_time_biz_1234'
   config.content_type = 'text/json'
+  config.debug = true
 end
 ```
 
