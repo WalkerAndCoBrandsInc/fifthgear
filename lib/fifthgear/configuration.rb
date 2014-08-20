@@ -2,12 +2,14 @@ require 'yaml'
 
 module Fifthgear
   class Configuration
-    attr_accessor :api_root, :username, :password, :content_type, :company_id
+    attr_accessor :api_root, :api_version, :username, :password, :content_type, :company_id, :debug
 
     def initialize
       defaults = load_defaults
       @api_root = defaults[:api_root]
+      @api_version = defaults[:api_version]
       @content_type = defaults[:content_type]
+      @debug = false
     end
 
     private

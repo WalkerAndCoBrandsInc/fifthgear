@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Fifthgear::VERSION
   spec.authors       = ["Tom Hanley"]
   spec.email         = ["tjhanleyx@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Gem for interfacing with Fifthgear's API.}
+  spec.description   = %q{Create objects in Fifthgear's fulfillment system}
+  spec.homepage      = "https://github.com/WalkerAndCoBrandsInc/fifthgear"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,4 +20,6 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
+  spec.add_dependency "faraday"
+  spec.add_dependency "faraday_middleware"
 end
