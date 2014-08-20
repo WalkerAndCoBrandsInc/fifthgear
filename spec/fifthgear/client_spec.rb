@@ -2,12 +2,8 @@ require 'spec_helper'
 
 module Fifthgear
   describe Client do
-    Fifthgear.configuration do |config|
-      config.username = 'foo'
-      config.password = 'password'
-    end
     describe "#new" do
-        let(:client) {Fifthgear.new}
+      let(:client) {Fifthgear::Client.new}
       it "should return a Faraday Connection object" do
         expect(client.class).to eq(Faraday::Connection)
       end

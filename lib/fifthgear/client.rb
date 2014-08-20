@@ -4,6 +4,8 @@ module Fifthgear
     def self.new
       Faraday.new(:url => Fifthgear.configuration.api_root ) do |faraday|
         faraday.use FaradayMiddleware::FollowRedirects
+        faraday.use Faraday::Response::ParseJson
+        faraday.use Faraday::Response::Mashify
         faraday.request  :url_encoded
         faraday.response :logger if Fifthgear.configuration.debug
         faraday.adapter  ::Faraday.default_adapter

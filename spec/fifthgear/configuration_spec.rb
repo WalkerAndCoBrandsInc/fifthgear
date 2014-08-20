@@ -2,7 +2,7 @@ require 'spec_helper'
 
 module Fifthgear
   describe Configuration do
-    let(:api_root) {'https://commerceservicestest.infifthgear.com/v2.0/CommerceServices.svc/Rest'}
+    let(:api_root) {'https://commerceservicestest.infifthgear.com'}
     let(:username) {'rick'}
     let(:password) {'rubin'}
     let(:company_id) {'company123'}
