@@ -6,7 +6,7 @@ module Fifthgear
     let(:username) {'rick'}
     let(:password) {'rubin'}
     let(:company_id) {'company123'}
-    let(:content_type) {'text/json'}
+    let(:content_type) {'application/json'}
 
     describe '#api_root' do
       it 'should default value' do
