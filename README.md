@@ -22,11 +22,12 @@ Or install it yourself as:
 ### Configuration
 ```ruby
 Fifthgear.configure do |config|
-  config.api_root = 'https://commerceservicestest.infifthgear.com/v2.0/CommerceServices.svc/Rest'
+  config.api_root = 'https://commerceservicestest.infifthgear.com'
+  config.api_version = '/v2.0/CommerceServices.svc/Rest'
   config.username = 'foo'
   config.password = 'bar'
   config.company_id = 'big_time_biz_1234'
-  config.content_type = 'text/json'
+  config.content_type = 'application/json'
   config.debug = true
 end
 ```
