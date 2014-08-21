@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Fifthgear
-  describe CartSubmit do
+  describe Cart do
     describe "#post" do
       it "should return an order object" do
         pending "Configuration isn't passing username and password to client."

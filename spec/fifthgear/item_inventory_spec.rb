@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 module Fifthgear
-  describe ItemInventoryLookup do
+  describe ItemInventory do
     describe "#get" do
       it "should return details about item" do
         pending "Configuration isn't passing username and password to client."
