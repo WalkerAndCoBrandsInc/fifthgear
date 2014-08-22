@@ -32,6 +32,18 @@ Fifthgear.configure do |config|
 end
 ```
 
+### Helpers
+
+Fifthgear requires dates to be in a specific format. We've added a helper function for formatting the dates correctly.
+Internally it uses [Chronic](https://github.com/mojombo/chronic) to parse the date.
+```ruby
+irb(main):001:0>  Fifthgear::Helper.format_date('12/01/2014')
+=> "Date(1417464000000-0800)"
+irb(main):002:0>  Fifthgear::Helper.format_date('12/01/2014 12:12:12')
+=> "Date(1417464732000-0800)"
+irb(main):003:0>
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/WalkerAndCoBrandsInc/fifthgear/fork )

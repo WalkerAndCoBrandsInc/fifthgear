@@ -5,3 +5,4 @@ gemspec
 gem 'rspec', :require => 'spec'
 gem 'faraday'
 gem 'faraday_middleware'
+gem 'chronic'
