@@ -12,6 +12,7 @@ require "fifthgear/order_status_by_ref_number"
 require "fifthgear/order_status_bulk"
 require "fifthgear/cart"
 require "fifthgear/helper"
+require "fifthgear/code_maps"
 
 module Fifthgear
   class << self
