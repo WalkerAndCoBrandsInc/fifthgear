@@ -23,5 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "faraday", "~> 0.9"
   spec.add_dependency "faraday_middleware", "~> 0.9"
   spec.add_dependency "chronic", "~> 0.10"
-  spec.add_runtime_dependency "hashie", "~> 2.1"
+  spec.add_runtime_dependency "hashie", "~> 3.3"
 end
