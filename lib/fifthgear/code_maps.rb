@@ -1,7 +1,7 @@
 require 'fifthgear'
 module Fifthgear
   class CodeMaps
-    Countries = {       
+    Countries = {
       "AFG" => 1,
       "ALA" => 2,
       "ALB" => 3,
@@ -334,6 +334,8 @@ module Fifthgear
 
     Shipping = {
       fedex_smart_post: {label: "FedEx SmartPost", code: "SF1"},
+      fedex_2day: {label: "FedEx 2-day", code: "F11"},
+      fedex_overnight: {label: "FedEx Overnight", code: "F06"},
       usps_priority: {label: "USPS Priority", code: "P03"},
       ldmk_express: {label: "LDMK Express (2-4)", code: "Z99"},
       ldmk_standard: {label: "LDMK Standard (3-8)", code: "Z98"}
