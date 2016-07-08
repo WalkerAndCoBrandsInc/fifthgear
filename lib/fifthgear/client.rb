@@ -12,7 +12,7 @@ module Fifthgear
         # response defs
         faraday.use Faraday::Response::ParseJson
         faraday.use Faraday::Response::Mashify
-        faraday.use Faraday::Response::RaiseError unless Fifthgear.configuration.debug
+        faraday.use Faraday::Response::RaiseError if Fifthgear.configuration.raise_errors
         faraday.response :logger if Fifthgear.configuration.debug
 
         faraday.headers['Content-Type'] = Fifthgear.configuration.content_type

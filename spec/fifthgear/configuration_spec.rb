@@ -7,26 +7,27 @@ module Fifthgear
     let(:password) {'rubin'}
     let(:company_id) {'company123'}
     let(:content_type) {'application/json'}
+    let(:raise_errors) { true }
 
-    describe '#api_root' do
-      it 'should default value' do
-        expect(Configuration.new.api_root).to eq(api_root)
-        expect(Configuration.new.content_type).to eq(content_type)
-      end
+    it 'has default values' do
+      expect(Configuration.new.api_root).to eq(api_root)
+      expect(Configuration.new.content_type).to eq(content_type)
+      expect(Configuration.new.raise_errors).to eq(false)
     end
-    describe '#api_root=' do
-      it 'can set value' do
-        config = Configuration.new
-        config.api_root = api_root
-        config.username = username
-        config.password = password
-        config.company_id = company_id
 
-        expect(config.api_root).to eq(api_root)
-        expect(config.username).to eq(username)
-        expect(config.password).to eq(password)
-        expect(config.company_id).to eq(company_id)
-      end
+    it 'can set values' do
+      config = Configuration.new
+      config.api_root = api_root
+      config.username = username
+      config.password = password
+      config.company_id = company_id
+      config.raise_errors = raise_errors
+
+      expect(config.api_root).to eq(api_root)
+      expect(config.username).to eq(username)
+      expect(config.password).to eq(password)
+      expect(config.company_id).to eq(company_id)
+      expect(config.raise_errors).to eq(raise_errors)
     end
   end
 end
