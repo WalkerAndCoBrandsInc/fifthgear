@@ -6,8 +6,8 @@ require 'fifthgear/version'
 Gem::Specification.new do |spec|
   spec.name          = "fifthgear"
   spec.version       = Fifthgear::VERSION
-  spec.authors       = ["Tom Hanley"]
-  spec.email         = ["tjhanleyx@gmail.com"]
+  spec.authors       = ["Tom Hanley", "Walker and Company"]
+  spec.email         = ["webops@walkerandcobrands.com"]
   spec.summary       = %q{Gem for interfacing with Fifthgear's API.}
   spec.description   = %q{Create objects in Fifthgear's fulfillment system}
   spec.homepage      = "https://github.com/WalkerAndCoBrandsInc/fifthgear"
