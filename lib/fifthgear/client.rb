@@ -12,11 +12,15 @@ module Fifthgear
         # response defs
         faraday.use Faraday::Response::ParseJson
         faraday.use Faraday::Response::Mashify
-        faraday.use Faraday::Response::RaiseError unless Fifthgear.configuration.debug
+        faraday.use Faraday::Response::RaiseError if Fifthgear.configuration.raise_errors
         faraday.response :logger if Fifthgear.configuration.debug
 
         faraday.headers['Content-Type'] = Fifthgear.configuration.content_type
         faraday.adapter ::Faraday.default_adapter
+
+        # timeout options are in seconds
+        faraday.options.timeout = Fifthgear.configuration.timeout
+        faraday.options.open_timeout = Fifthgear.configuration.open_timeout
       end
     end
   end

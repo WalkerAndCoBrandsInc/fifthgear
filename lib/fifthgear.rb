@@ -47,16 +47,15 @@ module Fifthgear
     Fifthgear::ItemPersonalizationData.export(sku)
   end
 
-  def self.order_status_by_ref_number(orderRefNumber=nil)
-    Fifthgear::OrderStatusLookupByRefNumber.lookup(orderRefNumber)
+  def self.order_status_by_ref_number_lookup(orderRefNumber=nil)
+    Fifthgear::OrderStatusByRefNumber.lookup(orderRefNumber)
   end
 
   def self.order_status_bulk_lookup(fromDate=nil, toDate=nil, startRange=nil, endRange=nil)
-    Fifthgear::OrderStatusBulkLookup.lookup(fromDate, toDate, startRange, endRange)
+    Fifthgear::OrderStatusBulk.lookup(fromDate, toDate, startRange, endRange)
   end
 
   def self.cart_submit(cart={})
     Fifthgear::Cart.submit(cart)
   end
-
 end
