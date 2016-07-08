@@ -17,6 +17,10 @@ module Fifthgear
 
         faraday.headers['Content-Type'] = Fifthgear.configuration.content_type
         faraday.adapter ::Faraday.default_adapter
+
+        # timeout options are in seconds
+        faraday.options.timeout = Fifthgear.configuration.timeout
+        faraday.options.open_timeout = Fifthgear.configuration.open_timeout
       end
     end
   end
